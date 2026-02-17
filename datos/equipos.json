@@ -40,7 +40,7 @@
       "equipo": "Athletic de Bilbao",
       "escudo": "🇮🇩",
       "ataque": 75,
-      "defensa": 72,
+      "defensa": 80,
       "plantilla": [
         {"nombre": "Jugador1", "edad": 18, "posicion": "POR", "media": 86},
         {"nombre": "Jugador2", "edad": 24, "posicion": "DEF", "media": 79},
@@ -51,7 +51,7 @@
     {
       "equipo": "Villareal C.F.",
       "escudo": "🇺🇦",
-      "ataque": 75,
+      "ataque": 78,
       "defensa": 72,
       "plantilla": [
         {"nombre": "Jugador1", "edad": 26, "posicion": "POR", "media": 75},

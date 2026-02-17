@@ -1,6 +1,6 @@
-# Node modules --> No sube las dependencias (se instalan con npm install)
+# Node modules(Dependencias) --> No sube las dependencias (se instalan con npm install)
 node_modules
-# Env --> No sube variables de entorno (contraseñas, API keys)
+# Env(Variables de entorno) --> No sube variables de entorno (contraseñas, API keys)
 .env
-# Os junk --> Archivo oculto de macOS que no sirve para el proyecto
+# Os junk(Archivos del sistema) --> Archivo oculto de macOS que no sirve para el proyecto
 .DS_Store

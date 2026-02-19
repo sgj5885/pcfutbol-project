@@ -43,13 +43,28 @@ function partidoAleatorio(local, visitante) {
   let golesVisitante = Math.floor(Math.random() * (fuerzaVisitante/factor))
   let resultado = (`Resultado: ${local.equipo} ${golesLocal} - ${golesVisitante} ${visitante.equipo}`);
   return resultado;
+  
 };
-console.log(partidoAleatorio(equipoLocal, equipoVisitante));
-// console.log(partidoAleatorio(equipos[0], equipos[3]));
-// let newTeam = {equipo: 'Sevilla', ataque: 79, defensa: 75};
-// console.log(partidoAleatorio(newTeam, equipos[1]));
+console.log(partidoAleatorio(equipoLocal, equipoVisitante))
+// let partidos = [];
 
+// for (let i = 0; i < equipos.length; i++) {
+//   for (let j = 0; j < equipos.length; j++) {
+//     if (i !== j) {
+//       let resultados = partidoAleatorio(equipos[i], equipos[j]);
+//       console.log(resultados);
+//       partidos.push({
+//         local: equipos[i].equipo,
+//         visitante: equipos[j].equipo,
+//         golesLocal: equipos,
+//         golesVisitante: ,
+//       });
+//       // console.log(ligaCompleta);
+//     };
+//   };
+// };
 
+// console.log(partidos);
 
 
 

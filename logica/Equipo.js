@@ -16,7 +16,7 @@
 
 //Class:
 
-class Equipo {
+export class Equipo {
   constructor (equipo, ataque, defensa) {
     this.equipo = equipo;
     this.ataque = ataque;
@@ -29,7 +29,7 @@ class Equipo {
   registrarPartido(golesAFavor, golesEnContra) {
     this.golesAFavor += golesAFavor
     this.golesEnContra += golesEnContra
-    this.diferenciaDeGoles += this.golesAFavor - this.golesEnContra
+    this.diferenciaDeGoles = this.golesAFavor - this.golesEnContra
     if (golesAFavor > golesEnContra) {
       this.puntos += 3;
     } else if (golesAFavor === golesEnContra) {
@@ -38,6 +38,8 @@ class Equipo {
       this.puntos += 0
     }
   }
+  reiniciarEstadisticas() {}
 }
-module.exports = { Equipo };
+// module.exports = { Equipo };
+
 

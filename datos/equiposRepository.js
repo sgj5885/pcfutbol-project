@@ -1,11 +1,10 @@
-/*
-Importamos el modulo fs de Node 
-*/
+// NODE VERSION //
+
+/* Importamos el modulo fs de Node */
 const fs = require("fs");
-const { get } = require("http");
-/*
-Utilizamos path para poder utilizar rutas absolutas/__relativas
-*/
+// const { get } = require("http");
+
+/* Utilizamos path para poder utilizar rutas absolutas/__relativas */
 const path = require("path");
 
 /* Utilizamos fs para poder leer los archivos que estan en la carpeta JSON

@@ -1,5 +1,8 @@
-{
-  "equipos": [
+// BROWSER VERSION //
+
+/* Exportamos los datos json para que se puedan usar en el navegador */
+
+export const equipos = [
     {
       "equipo": "Real Madrid",
       "escudo": "🏳️",
@@ -66,11 +69,10 @@
       "ataque": 77,
       "defensa": 75,
       "plantilla": [
-        {"nombre": "Jugador1", "edad": 21, "posicion": "POR", "media": 77},
+        {"nombre": "Jugador1", "edad": 26, "posicion": "POR", "media": 75},
         {"nombre": "Jugador2", "edad": 25, "posicion": "DEF", "media": 83},
-        {"nombre": "Jugador3", "edad": 32, "posicion": "MED", "media": 87},
-        {"nombre": "Jugador4", "edad": 24, "posicion": "DEL", "media": 82}
+        {"nombre": "Jugador3", "edad": 23, "posicion": "MED", "media": 73},
+        {"nombre": "Jugador4", "edad": 23, "posicion": "DEL", "media": 82}
       ]
     }
-  ]
-}
+  ];

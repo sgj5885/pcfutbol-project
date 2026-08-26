@@ -4,3 +4,5 @@ node_modules
 .env
 # Os junk(Archivos del sistema) --> Archivo oculto de macOS que no sirve para el proyecto
 .DS_Store
+
+Codex.dmg

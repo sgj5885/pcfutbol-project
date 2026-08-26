@@ -1,0 +1,93 @@
+const equipo = {
+  nombre: 'Real Madrid',
+  puntos: 35,
+  victorias: 11,
+  plantilla: function(plantilla) {
+    return plantilla
+  },
+}
+
+let madridTexto = JSON.stringify(equipo);
+console.log(madridTexto);
+
+// let newEquipo = JSON.parse(madridTexto);
+// console.log(typeof(newEquipo));
+
+let constante = {
+  "equipos": [
+    {
+      "equipo": "Real Madrid",
+      "escudo": "🏳️",
+      "ataque": 86,
+      "defensa": 80,
+      "plantilla": [
+        {"nombre": "Courtois", "edad": 20, "posicion": "POR", "media": 85},
+        {"nombre": "Jugador2", "edad": 22, "posicion": "DEF", "media": 80},
+        {"nombre": "Jugador3", "edad": 23, "posicion": "MED", "media": 88},
+        {"nombre": "Jugador4", "edad": 23, "posicion": "DEL", "media": 92}
+      ]
+    },
+    {
+      "equipo": "F.C. Barcelona",
+      "escudo": "🇱🇮",
+      "ataque": 83,
+      "defensa": 84,
+      "plantilla": [
+        {"nombre": "Jugador1", "edad": 25, "posicion": "POR", "media": 85},
+        {"nombre": "Jugador2", "edad": 30, "posicion": "DEF", "media": 80},
+        {"nombre": "Jugador3", "edad": 22, "posicion": "MED", "media": 88},
+        {"nombre": "Jugador4", "edad": 23, "posicion": "DEL", "media": 90}
+      ]
+    },
+    {
+      "equipo": "Atletico de Madrid",
+      "escudo": "🇦🇹",
+      "ataque": 80,
+      "defensa": 83,
+      "plantilla": [
+        {"nombre": "Jugador1", "edad": 21, "posicion": "POR", "media": 90},
+        {"nombre": "Jugador2", "edad": 22, "posicion": "DEF", "media": 88},
+        {"nombre": "Jugador3", "edad": 35, "posicion": "MED", "media": 78},
+        {"nombre": "Jugador4", "edad": 23, "posicion": "DEL", "media": 88}
+      ]
+    },
+    {
+      "equipo": "Athletic de Bilbao",
+      "escudo": "🇮🇩",
+      "ataque": 75,
+      "defensa": 80,
+      "plantilla": [
+        {"nombre": "Jugador1", "edad": 18, "posicion": "POR", "media": 86},
+        {"nombre": "Jugador2", "edad": 24, "posicion": "DEF", "media": 79},
+        {"nombre": "Jugador3", "edad": 33, "posicion": "MED", "media": 81},
+        {"nombre": "Jugador4", "edad": 23, "posicion": "DEL", "media": 79}
+      ]
+    },
+    {
+      "equipo": "Villareal C.F.",
+      "escudo": "🇺🇦",
+      "ataque": 78,
+      "defensa": 72,
+      "plantilla": [
+        {"nombre": "Jugador1", "edad": 26, "posicion": "POR", "media": 75},
+        {"nombre": "Jugador2", "edad": 25, "posicion": "DEF", "media": 83},
+        {"nombre": "Jugador3", "edad": 23, "posicion": "MED", "media": 73},
+        {"nombre": "Jugador4", "edad": 23, "posicion": "DEL", "media": 82}
+      ]
+    },
+    {
+      "equipo": "Real Sociedad",
+      "escudo": "🇬🇷",
+      "ataque": 77,
+      "defensa": 75,
+      "plantilla": [
+        {"nombre": "Jugador1", "edad": 21, "posicion": "POR", "media": 77},
+        {"nombre": "Jugador2", "edad": 25, "posicion": "DEF", "media": 83},
+        {"nombre": "Jugador3", "edad": 32, "posicion": "MED", "media": 87},
+        {"nombre": "Jugador4", "edad": 24, "posicion": "DEL", "media": 82}
+      ]
+    }
+  ]
+}
+
+console.log(typeof constante)

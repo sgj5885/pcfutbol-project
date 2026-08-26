@@ -32,5 +32,5 @@ Club.fromJSON   Temporada...   Mercado...
                      │
                      ▼
              return partida
-             
-`
+
+` 

@@ -1,4 +1,4 @@
-
+import { PlayerState } from "./PlayerState.js";
 
 export class Player {
   constructor (name, age, position, role, speed, dribbling, quality, agility) {
@@ -10,9 +10,7 @@ export class Player {
     this.dribbling = dribbling;
     this.quality = quality;
     this.agility = agility;
-    this.energy = 100;
-    this.form = 100;
-    this.morale = 100;
+    this.playerState = new PlayerState();
     
     function validateAttribute(attribute, value) {
       if (value < 0 || value > 100) {
@@ -51,21 +49,27 @@ export class Player {
 
   // Efective current capacity:
   calculatePlayerRating() {
-    const playerRating = (this.calculateBaseRating() * 0.80) + (this.energy * 0.10) + (this.form * 0.06) + (this.morale * 0.04);
+    const playerRating = (this.calculateBaseRating() * 0.80) + (this.playerState.playerEnergy * 0.10) + (this.playerState.playerForm * 0.06) + (this.playerState.playerMorale * 0.04);
   //   return Math.round(playerRating);
     return playerRating;
   }
+
+  reduceEnergy(value) {
+    this.playerState.reduceEnergy(value)
+  }
 }
-const newPlayer = new Player("Test Player", 19, "DEL", "DEL", 80, 83, 85, 88);
-console.log(newPlayer);
-
-console.log(newPlayer.calculateBaseRating());
-console.log(newPlayer.calculatePlayerRating());
-
-newPlayer.energy = 50;
-console.log(newPlayer.calculateBaseRating());
-console.log(newPlayer.calculatePlayerRating());
+const newPlayerA = new Player("Test PlayerA", 19, "DEL", "DEL", 80, 83, 85, 88);
+const newPlayerB = new Player("Test PlayerB", 22, "DEL", "DEL", 87, 83, 85, 88);
 
 
-newPlayer.form= 150;
-console.log(newPlayer);
+// console.log(newPlayerB.playerState === newPlayerA.playerState);
+
+
+
+newPlayerA.reduceEnergy(30);
+console.log(newPlayerA.playerState.playerEnergy);
+
+
+
+
+

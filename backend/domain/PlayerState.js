@@ -120,7 +120,7 @@ export class PlayerState {
 }
 
 const newPlayerState = new PlayerState();
-
+console.log(newPlayerState);
 
 
 

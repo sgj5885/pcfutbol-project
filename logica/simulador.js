@@ -15,7 +15,10 @@ export function partidoAleatorio(equipoLocal, equipoVisitante) {
   let golesVisitante = Math.floor(Math.random() * fuerzaVisitante)
   
   // Aqui guardamos el resultado en un objeto --> SOLO DEVUELVE GOLES
-  return { golesLocal, golesVisitante };
+  return { 
+    golesLocal, 
+    golesVisitante,
+  };
 };
 
 // module.exports = { partidoAleatorio };

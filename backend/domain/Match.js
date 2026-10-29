@@ -48,7 +48,8 @@ export class Match {
   }
 
   halfTime() {
-    if (this.#inProgressMatch() && this.#period !== "first_half_in_progress");
+    if (this.#inProgressMatch() && this.#period !== "first_half_in_progress") {
+    };
     this.#status = "halftime";
     
   }

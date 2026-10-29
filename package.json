@@ -1,0 +1,17 @@
+{
+  "name": "pcfutbol_project",
+  "version": "1.0.0",
+  "description": "Simulador de liga estilo PC Fútbol desarrollado en Node.js. y React",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "S3RGIO58",
+  "license": "ISC",
+  "type": "module"
+}

@@ -19,15 +19,12 @@ export class Player {
         )
       }
     };
-
+    // Objeto creado/utilizado para validar los atributos iniciales del jugador. 
     const playerAttributes = {
       speed, 
       dribbling,
       quality,
       agility,
-      energy: this.energy,
-      form: this.form,
-      morale: this.morale,
     }
     
     const attributesValues = Object.entries(playerAttributes);
@@ -58,16 +55,16 @@ export class Player {
     this.playerState.reduceEnergy(value)
   }
 }
-const newPlayerA = new Player("Test PlayerA", 19, "DEL", "DEL", 80, 83, 85, 88);
-const newPlayerB = new Player("Test PlayerB", 22, "DEL", "DEL", 87, 83, 85, 88);
+// const newPlayerA = new Player("Test PlayerA", 19, "DEL", "DEL", 80, 83, 85, 88);
+// const newPlayerB = new Player("Test PlayerB", 22, "DEL", "DEL", 87, 83, 85, 88);
 
 
-// console.log(newPlayerB.playerState === newPlayerA.playerState);
+// // console.log(newPlayerB.playerState === newPlayerA.playerState);
 
 
 
-newPlayerA.reduceEnergy(30);
-console.log(newPlayerA.playerState.playerEnergy);
+// newPlayerA.reduceEnergy(30);
+// console.log(newPlayerA);
 
 
 

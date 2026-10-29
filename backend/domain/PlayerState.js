@@ -26,7 +26,7 @@ export class PlayerState {
   // Regala interna de validación de tipo de dato que introducimos mediante value.
   #validateValue(value) {
     if (value < 0 || typeof value !== "number" || !Number.isFinite(value)) {
-      throw new Error(`El valor introducido no es valido`);
+      throw new Error(`The value you try to add is not allowed`);
     };
   }
   // Getters para obtenerlos valores de las propiedades del constructor:
@@ -41,7 +41,6 @@ export class PlayerState {
   get playerMorale() {
     return this.#morale;
   }
-  
   
   
   #calculateAndLimitValue(value1, value2, operation, min, max) {
@@ -60,8 +59,8 @@ export class PlayerState {
   }
   
   // ENERGY:
-  // Recover Energy:
   
+  // Recover Energy:
   recoverEnergy(addEnergy) {
     this.#validateValue(addEnergy);
     const actualEnergy = this.#energy;
@@ -119,8 +118,8 @@ export class PlayerState {
   
 }
 
-const newPlayerState = new PlayerState();
-console.log(newPlayerState);
+// const newPlayerState = new PlayerState();
+// console.log(newPlayerState);
 
 
 
